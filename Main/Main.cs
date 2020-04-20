@@ -14,9 +14,12 @@ namespace App
     {
         static void Main(string[] args)
         {
+            CalendarService service = Authentication.Authenticate();
+            string path = Directory.GetCurrentDirectory() + "/../Notes";
+            if (! Directory.Exists(path))
+                Directory.CreateDirectory(path);
             string[] date;
             string date1, time1, startTime;
-            
             while (true)
             {
                 Console.Clear();
@@ -93,7 +96,7 @@ namespace App
                         Console.Write("Enter the date (DD.MM.YYYY): ");
                         time1 = Console.ReadLine();
                         startTime = date1 + " " + time1 + " " + "+05:30";
-                        Reminders.GetReminders(startTime);
+                        Reminders.GetReminder(startTime);
                         Console.Write("Press any Key to continue... ");
                         Console.ReadKey();
                         break;

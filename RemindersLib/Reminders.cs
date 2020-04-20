@@ -45,7 +45,7 @@ namespace RemindersLib
             Console.WriteLine("Event created: {0}\n", createdEvent.HtmlLink);
         }
         
-        public static void GetReminders(string date)
+        public static void GetReminder(string date)
         {
             CalendarService service = Authentication.Authenticate();
 

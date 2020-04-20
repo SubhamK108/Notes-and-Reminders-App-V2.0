@@ -1,0 +1,17 @@
+/mnt/d/Coding/Personal/Other Projects/Notes and Reminders App in C#/NotebookLib/bin/Debug/netstandard2.0/NotebookLib.deps.json
+/mnt/d/Coding/Personal/Other Projects/Notes and Reminders App in C#/NotebookLib/bin/Debug/netstandard2.0/NotebookLib.dll
+/mnt/d/Coding/Personal/Other Projects/Notes and Reminders App in C#/NotebookLib/bin/Debug/netstandard2.0/NotebookLib.pdb
+/mnt/d/Coding/Personal/Other Projects/Notes and Reminders App in C#/NotebookLib/obj/Debug/netstandard2.0/NotebookLib.csprojAssemblyReference.cache
+/mnt/d/Coding/Personal/Other Projects/Notes and Reminders App in C#/NotebookLib/obj/Debug/netstandard2.0/NotebookLib.AssemblyInfoInputs.cache
+/mnt/d/Coding/Personal/Other Projects/Notes and Reminders App in C#/NotebookLib/obj/Debug/netstandard2.0/NotebookLib.AssemblyInfo.cs
+/mnt/d/Coding/Personal/Other Projects/Notes and Reminders App in C#/NotebookLib/obj/Debug/netstandard2.0/NotebookLib.dll
+/mnt/d/Coding/Personal/Other Projects/Notes and Reminders App in C#/NotebookLib/obj/Debug/netstandard2.0/NotebookLib.pdb
+D:/Coding/Personal/Other Projects/Notes and Reminders App in C#/NotebookLib/bin/Debug/netstandard2.0/NotebookLib.deps.json
+D:/Coding/Personal/Other Projects/Notes and Reminders App in C#/NotebookLib/bin/Debug/netstandard2.0/NotebookLib.dll
+D:/Coding/Personal/Other Projects/Notes and Reminders App in C#/NotebookLib/bin/Debug/netstandard2.0/NotebookLib.pdb
+D:/Coding/Personal/Other Projects/Notes and Reminders App in C#/NotebookLib/obj/Debug/netstandard2.0/NotebookLib.csprojAssemblyReference.cache
+D:/Coding/Personal/Other Projects/Notes and Reminders App in C#/NotebookLib/obj/Debug/netstandard2.0/NotebookLib.AssemblyInfoInputs.cache
+D:/Coding/Personal/Other Projects/Notes and Reminders App in C#/NotebookLib/obj/Debug/netstandard2.0/NotebookLib.AssemblyInfo.cs
+D:/Coding/Personal/Other Projects/Notes and Reminders App in C#/NotebookLib/obj/Debug/netstandard2.0/NotebookLib.dll
+D:/Coding/Personal/Other Projects/Notes and Reminders App in C#/NotebookLib/obj/Debug/netstandard2.0/NotebookLib.pdb
+/mnt/d/Coding/Personal/Other Projects/Notes and Reminders App in C#/NotebookLib/obj/Debug/netstandard2.0/NotebookLib.csproj.CoreCompileInputs.cache

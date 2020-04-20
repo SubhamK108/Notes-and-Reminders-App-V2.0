@@ -11,7 +11,7 @@ namespace NotebookLib
         {
             string date = DateTime.Now.ToString("dd/MMMM/yyyy");
             string time = DateTime.Now.ToString("hh:mm:ss");
-            string heading = $"Date: {date}\t\tTime: {time}";
+            string heading = $"Date: {date}\t\t\tTime: {time}";
 
             string path = Directory.GetCurrentDirectory() + $"/../Notes/{filename}.txt";
 
@@ -50,7 +50,9 @@ namespace NotebookLib
             {
                 using (StreamReader file = new StreamReader(path, Encoding.UTF8))
                 {
-                    string note = "\nNote Found...\n\n" + file.ReadToEnd();
+                    Console.WriteLine("Note Found");
+                    Console.WriteLine("----------------------------------------------------------------------------\n");
+                    string note = file.ReadToEnd();
                     return note;
                 }
             }

@@ -14,61 +14,114 @@ namespace App
     {
         static void Main(string[] args)
         {
-            Console.Clear();
-            // Console.WriteLine("Hello");
-
-            // CalendarService service = Authentication.Authenticate();
-            // string[] date = DateTime.Now.ToString("dd.MM.yyyy").Split('.');
-            // string fileName = date[0] + date[1] + date[2];
-            // Console.Write("Enter the Note: ");
-            // string note = Console.ReadLine();
-            // Notebook.CreateNote(note, fileName);
-
-            // /////////////////////////
-
-            // Console.Write("Enter the Date (DD.MM.YYYY): ");
-            // string[] date2 = Console.ReadLine().Split('.');
-            // string fileName2 = date2[0] + date2[1] + date2[2];
-            // string note2 = Notebook.GetNote(fileName2);
-            // Console.WriteLine(note2);
-
-            // /////////////////////////
-
-            // Console.Write("Enter the Date (DD.MM.YYYY): ");
-            // string[] date3 = Console.ReadLine().Split('.');
-            // string fileName3 = date3[0] + date3[1] + date3[2];
-            // Notebook.DeleteNote(fileName3);
-
-
-            // string startTime = "1.4.2020" + " " + "8:30" + " " + "+05:30";
-            // int duration = 60;
-            // string location = "Kolkata";
-            // string description = "Celebrations for the New Year 2020";
-            // string title = "NEW YEAR 2020";
-
+            string[] date;
+            string date1, time1, startTime;
             
-            
-            // Reminders.CreateReminder(startTime, duration, title, description, location);
-            // Reminders.GetReminders(startTime);
-            // Reminders.DeleteReminder(startTime);
+            while (true)
+            {
+                Console.Clear();
+                Console.WriteLine("... Personal Notes & Reminders ...\n");
+                Console.WriteLine("1. Enter a note.");
+                Console.WriteLine("2. View a note");
+                Console.WriteLine("3. Delete a note");
+                Console.WriteLine("4. Create a reminder");
+                Console.WriteLine("5. View a reminder");
+                Console.WriteLine("6. Delete a reminder");
+                Console.WriteLine("7. Exit\n");
+                Console.Write("Enter your option: ");
+                int choice = Convert.ToInt32(Console.ReadLine());
 
+                switch (choice)
+                {
+                    case 1:
+                        Console.Clear();
+                        date = DateTime.Now.ToString("dd.MM.yyyy").Split('.');
+                        string fileName = date[0] + date[1] + date[2];
+                        Console.Write("Enter the Note: ");
+                        string note = Console.ReadLine();
+                        Notebook.CreateNote(note, fileName);
+                        Console.WriteLine("Note created\n");
+                        Console.Write("Press any Key to continue... ");
+                        Console.ReadKey();
+                        break;
+                    
+                    case 2:
+                        Console.Clear();
+                        Console.Write("Enter the Date (DD.MM.YYYY): ");
+                        date = Console.ReadLine().Split('.');
+                        string fileName2 = date[0] + date[1] + date[2];
+                        string note1 = Notebook.GetNote(fileName2);
+                        Console.WriteLine(note1);
+                        Console.Write("Press any Key to continue... ");
+                        Console.ReadKey();
+                        break;
 
+                    case 3:
+                        Console.Clear();
+                        Console.Write("Enter the Date (DD.MM.YYYY): ");
+                        date = Console.ReadLine().Split('.');
+                        string fileName3 = date[0] + date[1] + date[2];
+                        Notebook.DeleteNote(fileName3);
+                        Console.Write("Press any Key to continue... ");
+                        Console.ReadKey();
+                        break;
 
-            // string startTime = "12.31.2019" + " " + "8:30" + " " + "+05:30";
-            // int duration = 60;
-            // DateTime start1 = Convert.ToDateTime(startTime, CultureInfo.CurrentCulture);
-            // DateTime start2 = DateTime.Parse(startTime, CultureInfo.CurrentCulture, DateTimeStyles.AssumeLocal);
-            // DateTime end1 = start1.AddMinutes(duration);
-            // DateTime end2 = start2.AddMinutes(duration);
-            // Console.WriteLine(end1.ToString());
-            // Console.WriteLine(end2.ToString());
+                    case 4:
+                        Console.Clear();
+                        Console.Write("Enter the date (DD.MM.YYYY): ");
+                        date1 = Console.ReadLine();
+                        Console.Write("Enter the date (DD.MM.YYYY): ");
+                        time1 = Console.ReadLine();
+                        startTime = date1 + " " + time1 + " " + "+05:30";
+                        Console.Write("Enter the duration: ");
+                        int duration = Convert.ToInt32(Console.ReadLine());
+                        Console.Write("Enter the location: ");
+                        string location = Console.ReadLine();
+                        Console.Write("Enter the description: ");
+                        string description = Console.ReadLine();
+                        Console.Write("Enter the title: ");
+                        string title = Console.ReadLine();
+                        Reminders.CreateReminder(startTime, duration, title, description, location);
+                        Console.Write("Press any Key to continue... ");
+                        Console.ReadKey();
+                        break;
 
-            // char[] separators = {' ', '.', ':', '/'};
-            // string[] str  = end1.ToString().Split(separators);
-            // string date4 = string.Join("", str, 0, 3);
-            // Console.WriteLine(date4);
+                    case 5:
+                        Console.Clear();
+                        Console.Write("Enter the date (DD.MM.YYYY): ");
+                        date1 = Console.ReadLine();
+                        Console.Write("Enter the date (DD.MM.YYYY): ");
+                        time1 = Console.ReadLine();
+                        startTime = date1 + " " + time1 + " " + "+05:30";
+                        Reminders.GetReminders(startTime);
+                        Console.Write("Press any Key to continue... ");
+                        Console.ReadKey();
+                        break;
 
-            
+                    case 6:
+                        Console.Clear();
+                        Console.Write("Enter the date (DD.MM.YYYY): ");
+                        date1 = Console.ReadLine();
+                        Console.Write("Enter the date (DD.MM.YYYY): ");
+                        time1 = Console.ReadLine();
+                        startTime = date1 + " " + time1 + " " + "+05:30";
+                        Reminders.DeleteReminder(startTime);
+                        Console.Write("Press any Key to continue... ");
+                        Console.ReadKey();
+                        break;
+
+                    case 7:
+                        Environment.Exit(0);
+                        break;
+
+                    default:
+                        Console.Clear();
+                        Console.WriteLine("Invalid Option !\n");
+                        Console.Write("Press any Key to continue... ");
+                        Console.ReadKey();
+                        break;
+                }
+            }
         }
     }
 }

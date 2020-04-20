@@ -1,0 +1,4 @@
+.vscode/
+*/bin
+Main/token.json
+AuthenticationLib/client_secret.json

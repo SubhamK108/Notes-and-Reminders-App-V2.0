@@ -14,7 +14,6 @@ namespace App
     {
         static void Main(string[] args)
         {
-            CalendarService service = Authentication.Authenticate();
             string path = Directory.GetCurrentDirectory() + "/../Notes";
             if (! Directory.Exists(path))
                 Directory.CreateDirectory(path);
